@@ -102,7 +102,7 @@ const SignUp = () => {
           </div>
 
           {/* Sign Up */}
-          <Link href="/" className="text-[#2e3192] font-bold">
+          <Link href="./" className="text-[#2e3192] font-bold">
           <button className="w-full h-[40px] bg-gradient-to-r from-[#00aeef] to-[#2e3192] text-white font-semibold rounded-xl">
             Sign up
           </button>
