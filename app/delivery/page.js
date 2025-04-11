@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Listbox } from '@headlessui/react';
+import Link from "next/link";
 import { ChevronUpDownIcon } from '@heroicons/react/20/solid';
 
 import EasyShip from '/assets/images/Easyship 1 (1).png';
@@ -41,10 +42,10 @@ const DeliveryPage = () => {
             <Image src={Dashboard} alt="Dashboard" />
             <h3 className="text-[11px] text-black/75">Dashboard</h3>
           </div>
-          <div className="text-center">
+          {/* <div className="text-center">
             <Image src={Tracking} alt="Tracking" />
             <h3 className="text-[11px] text-black/75">Tracking</h3>
-          </div>
+          </div> */}
           <div className="text-center">
             <Image src={Payment} alt="Payment" />
             <h3 className="text-[11px] text-black/75">Payment</h3>
@@ -80,7 +81,7 @@ const DeliveryPage = () => {
         {/* Booking Section */}
         <div className="bg-white rounded-[20px] shadow-[0_8px_16px_rgba(0,0,0,0.06)] px-[40px] py-[48px] max-w-[960px] mx-auto">
           <h1 className="text-[28px] font-semibold text-center mb-3 tracking-tight">
-            BOOK A <span className="text-[#264AE5]">DELIVERY</span>
+             <span className="text-[#264AE5]"> BOOK A DELIVERY</span>
           </h1>
           <p className="text-center text-[#6E7191] text-[15px] mb-[36px] max-w-[480px] mx-auto leading-[1.6]">
             Pick where you're leaving from and where you're going using the dropdowns,
@@ -148,13 +149,15 @@ const DeliveryPage = () => {
           </div>
 
           {/* Submit Button */}
+          <Link href="./" className="text-[#2e3192] font-bold">
           <button
-            onClick={handleSubmit}
+            
             className="w-[471px] max-sm:w-[180px] max-md:w-[220px] h-[53px] bg-[#264AE5] hover:bg-[#1f3bcc] text-white py-[16px] rounded-[14px] flex items-center justify-center gap-2 m-auto text-[15px] font-medium"
           >
-            <Image src={Search} alt="Search" />
+            {/* <Image src={Search} alt="Search" /> */}
             Book a Delivery
           </button>
+          </Link>
         </div>
       </main>
     </div>
