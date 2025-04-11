@@ -29,7 +29,7 @@ const Login = () => {
             <input
               type="email"
               placeholder="Email"
-              className="w-[332.25px] h-[36.75px] placeholder:text-[12px] placeholder:inset-3 py-[10px] pl-[45px] pr-[8px] space-x-[8px] border-[#9e9e9e]/60 border-[2px] rounded-[11.25px] focus:outline-none focus:ring-2 focus:ring-blue-500  mb-[16.5px]"
+              className="w-[332.25px] h-[36.75px] text-black placeholder:text-[12px] placeholder:inset-3 py-[10px] pl-[45px] pr-[8px] space-x-[8px] border-[#9e9e9e]/60 border-[2px] rounded-[11.25px] focus:outline-none focus:ring-2 focus:ring-blue-500  mb-[16.5px]"
             />
             <Image
               src="/assets/images/iconamoon_profile-fill.png"
@@ -44,7 +44,7 @@ const Login = () => {
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Password"
-              className="w-[332.25px] h-[36.75px] placeholder:text-[12px] placeholder:inset-3 py-[10px] pl-[45px] pr-[8px] space-x-[8px] border-[#9e9e9e]/60 border-[2px] rounded-[11.25px] focus:outline-none focus:ring-2 focus:ring-blue-500 mb-[16.5px]"
+              className="w-[332.25px] h-[36.75px] text-black placeholder:text-[12px] placeholder:inset-3 py-[10px] pl-[45px] pr-[8px] space-x-[8px] border-[#9e9e9e]/60 border-[2px] rounded-[11.25px] focus:outline-none focus:ring-2 focus:ring-blue-500 mb-[16.5px]"
             />
             <Image
               src="/assets/images/majesticons_key.png"
@@ -54,11 +54,11 @@ const Login = () => {
               className="absolute left-3 top-3"
             />
             <Image
-              src={showPassword ? "/assets/images/eye-open.png" : "/images/majesticons_eye-off.png"}
+              // src={showPassword ? "/assets/images/eye-open.png" : "/images/majesticons_eye-off.png"}
               alt="Toggle Password"
               width={15}
               height={15}
-              className="absolute left-[301px] top-[10px] w-[15px] h-[15px] bg-no-repeat bg-contain cursor-pointer"
+              className="absolute left-[301px] top-[10px] w-[15px] h-[15px] bg-no-repeat bg-contain cursor-pointer text-black"
               onClick={() => setShowPassword(!showPassword)}
             />
           </div>

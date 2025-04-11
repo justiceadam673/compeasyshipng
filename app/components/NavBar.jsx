@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Button from "./Button";
 import ButtonBorderStroke from "./UI/ButtonBorderStroke";
 import { Menu, X } from "lucide-react";
+import Link from 'next/link';
 
 
 const NavBar = () => {
@@ -40,11 +40,11 @@ const NavBar = () => {
           ))}
         </ul>
 
-        <div className='flex max-md:hidden space-x-4'>
-          <Button className='h-10 w-20 mr-[30px] max-lg:w-[100%] max-lg:px-[10px] '>
-            Get a Quote
-          </Button>
-        </div>
+        <Link href="/signup">
+  <button className="bg-[#264AE5] hover:bg-[#1f3bcc] text-white px-6 py-3 rounded-[14px] text-[15px] font-medium">
+          SignUp
+  </button>
+</Link>
 
         <button className='lg:hidden' onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}

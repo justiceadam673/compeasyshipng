@@ -38,7 +38,7 @@ const SignUp = () => {
             <input
               type="email"
               placeholder="Email"
-              className="w-full h-[40px] placeholder:text-sm py-2 pl-11 pr-3 border border-[#9e9e9e]/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+              className="w-full h-[40px] text-black placeholder:text-sm py-2 pl-11 pr-3 border border-[#9e9e9e]/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
             />
             <div
               className="absolute top-2.5 left-3 w-5 h-5 bg-no-repeat bg-contain"
@@ -51,7 +51,7 @@ const SignUp = () => {
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Password"
-              className="w-full h-[40px] placeholder:text-sm py-2 pl-11 pr-3 border border-[#9e9e9e]/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+              className="w-full h-[40px] text-black placeholder:text-sm py-2 pl-11 pr-3 border border-[#9e9e9e]/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
             />
             <div
               className="absolute top-2.5 left-3 w-5 h-5 bg-no-repeat bg-contain"
@@ -73,7 +73,7 @@ const SignUp = () => {
             <input
               type={showConfirmPassword ? "text" : "password"}
               placeholder="Confirm password"
-              className="w-full h-[40px] placeholder:text-sm py-2 pl-11 pr-3 border border-[#9e9e9e]/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full h-[40px] text-black placeholder:text-sm py-2 pl-11 pr-3 border border-[#9e9e9e]/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <div
               className="absolute top-2.5 left-3 w-5 h-5 bg-no-repeat bg-contain"
@@ -102,9 +102,12 @@ const SignUp = () => {
           </div>
 
           {/* Sign Up */}
+          <Link href="/" className="text-[#2e3192] font-bold">
           <button className="w-full h-[40px] bg-gradient-to-r from-[#00aeef] to-[#2e3192] text-white font-semibold rounded-xl">
             Sign up
           </button>
+          </Link>
+
 
           {/* Already have account */}
           <p className="text-center text-gray-600 text-sm mt-4">

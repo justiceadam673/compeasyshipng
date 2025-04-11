@@ -26,14 +26,14 @@ const HeroSection = () => {
             logistics solutions. Get your orders delivered swiftly and securely.
           </p>
           <section className='flex flex-col sm:flex-row sm:space-x-4 mt-4'>
-          <Link href="/signup">
+          <Link href="/delivery">
             <Button className='w-full sm:w-[180px] md:w-[219px] font-bold h-[44px]'>
-              Plan an Order
+              Book Delivery
             </Button>
             </Link>
-            <Link href="/tracking/tracking-map">
+            <Link href="/trackings">
             <ButtonBorderStroke className='w-full sm:w-[180px] md:w-[219px] h-[44px] mt-2 sm:mt-0'>
-              Become a Vendor
+              Track Shipment
             </ButtonBorderStroke>
             </Link>
           </section>
