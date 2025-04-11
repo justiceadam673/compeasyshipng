@@ -10,7 +10,7 @@ import EasyShip from '/assets/images/Easyship 1 (1).png';
 import Dashboard from '/assets/images/Dashboard.png';
 import Delivery from '/assets/images/Delivery.png';
 import Payment from '/assets/images/Payment.png';
-import Tracking from '/assets/images/Tracking.png';
+// import Tracking from '/assets/images/Tracking.png';
 import Person from '/assets/images/Person.png';
 import Search from '/assets/images/Search.png';
 
